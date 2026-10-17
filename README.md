@@ -33,7 +33,19 @@ Native Yandex Music client and Omarchy Quickshell top-right panel plugin powered
 
 ## Quick Start
 
-### 1. Build & Install Binaries
+### 1. Install Binaries
+
+**Prebuilt (x86_64 / aarch64):** download the archive for your architecture from [Releases](https://github.com/mehroj-r/yamarchy/releases), then:
+
+```bash
+sha256sum -c yamarchy-*.tar.gz.sha256
+tar xzf yamarchy-*.tar.gz && cd yamarchy-*/
+sudo install -m755 yamarchy yamarchy-daemon /usr/local/bin/
+```
+
+The archive also contains `plugin/` and `systemd/yamarchy.service` for the steps below. You still need ALSA installed at runtime (`alsa-lib` on Arch).
+
+**From source:**
 
 ```bash
 cargo build --release
