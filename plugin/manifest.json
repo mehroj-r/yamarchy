@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "yamarchy",
   "name": "Yandex Music",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "mehroj-r",
   "description": "Native Yandex Music player and Omarchy status bar panel",
   "kinds": [
