@@ -1,0 +1,62 @@
+name: Bug report
+description: Something isn't working as expected.
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `yamarchy vibe user:onyourwave --diversity discover`
+        2. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Daemon (playback, queue, My Vibe / radio)
+        - CLI
+        - Omarchy panel plugin
+        - MPRIS2 (media keys, other media widgets)
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installed from
+      options:
+        - Release archive (x86_64)
+        - Release archive (aarch64)
+        - Built from source
+    validations:
+      required: true
+  - type: input
+    id: station
+    attributes:
+      label: Station
+      description: The station that was playing, if any (e.g. `user:onyourwave`, `activity:energy`).
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: Distro and audio stack (e.g. Omarchy with PipeWire, Debian 12 with PulseAudio).
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Output of `yamarchy --version`, or the commit you built from.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: From `journalctl --user -u yamarchy` or the daemon's terminal. Remove your OAuth token and signed stream URLs before pasting.
+      render: shell

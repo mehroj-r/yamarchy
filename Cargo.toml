@@ -8,11 +8,13 @@ members = [
 resolver = "2"
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-authors = ["mehroj-r"]
+authors = ["Mehroj Majidov"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/mehroj-r/yamarchy"
+readme = "README.md"
+keywords = ["yandex-music", "music-player", "mpris", "omarchy", "linux"]
 
 [workspace.dependencies]
 tokio = { version = "1.38", features = ["full"] }
