@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "yamarchy",
+  "name": "Yandex Music",
+  "version": "0.1.0",
+  "author": "mehroj-r",
+  "description": "Native Yandex Music player and Omarchy status bar panel",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Yandex Music",
+    "description": "Yandex Music player controls and stream manager",
+    "category": "Media",
+    "allowMultiple": false
+  }
+}

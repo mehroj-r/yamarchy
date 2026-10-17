@@ -1,0 +1,19 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+
+# User configuration and tokens
+config.toml
+*.token
+
+# Cache & temporary files
+.cache/
+/tmp/
+*.sock
+*.log
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
