@@ -1,8 +1,11 @@
 # Yamarchy 🎵
 
 [![CI](https://github.com/mehroj-r/yamarchy/actions/workflows/ci.yml/badge.svg)](https://github.com/mehroj-r/yamarchy/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/mehroj-r/yamarchy)](https://github.com/mehroj-r/yamarchy/releases/latest)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+[![Rust](https://img.shields.io/badge/rust-stable-orange.svg?logo=rust)](https://www.rust-lang.org)
 
-Native Yandex Music client and Omarchy Quickshell top-right panel plugin powered by a lightweight Rust daemon, MPRIS2 D-Bus integration, Unix domain socket IPC, and CLI tools.
+Unofficial Yandex Music client for Linux: a lightweight Rust playback daemon with MPRIS2 and Unix socket IPC, a CLI, and an [Omarchy](https://omarchy.org) Quickshell top-bar panel for My Vibe and radio stations. Prebuilt x86_64 and aarch64 binaries are on the [Releases](https://github.com/mehroj-r/yamarchy/releases) page.
 
 > [!WARNING]
 > **Unofficial project.** Yamarchy is not affiliated with, endorsed by, or connected to Yandex. It talks to an undocumented, reverse-engineered API that can change or break at any time. You need your own Yandex Music account (playback of full tracks requires an active Yandex Plus subscription). Use it at your own risk and in line with Yandex's terms of service.
@@ -149,6 +152,12 @@ diversity = "default"
 mood_energy = "all"
 language = "any"
 ```
+
+---
+
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Please report security issues privately as described in [SECURITY.md](SECURITY.md).
 
 ---
 

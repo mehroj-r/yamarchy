@@ -6,6 +6,9 @@ authors.workspace = true
 repository.workspace = true
 edition.workspace = true
 license.workspace = true
+readme.workspace = true
+keywords.workspace = true
+categories = ["multimedia::audio"]
 
 [dependencies]
 tokio = { workspace = true }
