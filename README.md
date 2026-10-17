@@ -1,5 +1,7 @@
 # Yamarchy 🎵
 
+[![CI](https://github.com/mehroj-r/yamarchy/actions/workflows/ci.yml/badge.svg)](https://github.com/mehroj-r/yamarchy/actions/workflows/ci.yml)
+
 Native Yandex Music client and Omarchy Quickshell top-right panel plugin powered by a lightweight Rust daemon, MPRIS2 D-Bus integration, Unix domain socket IPC, and CLI tools.
 
 > [!WARNING]
@@ -64,6 +66,18 @@ omarchy restart shell
 ```
 
 ### 4. Run the Daemon
+
+Start it on login as a systemd user service (recommended):
+
+```bash
+mkdir -p ~/.config/systemd/user
+cp dist/systemd/yamarchy.service ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now yamarchy.service
+journalctl --user -u yamarchy -f   # logs
+```
+
+Or run it in the foreground:
 
 ```bash
 yamarchy daemon
